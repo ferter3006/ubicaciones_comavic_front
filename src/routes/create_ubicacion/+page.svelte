@@ -234,6 +234,7 @@
 			name = '';
 			city = '';
 			ubicacionLink = '';
+			setTimeout(() => (window.location.href = '/'), 1000);
 		} catch (e) {
 			error = e instanceof Error ? e.message : 'No se pudo crear la ubicacion.';
 		} finally {
