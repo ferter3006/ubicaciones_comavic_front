@@ -74,7 +74,7 @@
 </script>
 
 <div class="flex min-h-screen flex-col items-center bg-primary p-4">
-	<h1 class="text-2xl font-bold text-white">Ubicaciones</h1>
+	<h1 class="text-2xl font-bold text-white">Ubicaciones:</h1>
 	<div class="w-full max-w-xl">
 		<label for="search" class="mb-2 block text-lg font-medium">Buscar:</label>
 		<textarea
