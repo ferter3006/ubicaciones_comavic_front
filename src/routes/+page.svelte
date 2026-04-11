@@ -43,7 +43,8 @@
 		try {
 			const safeQuery = query.replace(/'/g, "\\'");
 			const res = await pb.collection(collection).getList(1, 10, {
-				filter: `name ~ '${safeQuery}'`
+				filter: `name ~ '${safeQuery}'`,
+				requestKey: null
 			});
 
 			results = [];
@@ -55,7 +56,7 @@
 			error = 'Error consultando la base de datos' + (e instanceof Error ? `: ${e.message}` : '');
 			results = [];
 		} finally {
-			loading = false;
+			loading = false;			
 		}
 	}
 
